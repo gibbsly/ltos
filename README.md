@@ -5,7 +5,7 @@ This is a utility that allows you to reliably determine where a block was broken
 ## Use
 For this pack to function the `doTileDrops` gamerule has to be set to `true`. 
 
-There are 2 separate datapacks in this repo, `ltos_dotiledrops` makes blocks exhibit their vanilla block drop behavior, and `ltos_notiledrops` disables all vanilla block drops. If you have custom block loot tables in your datapack be sure to read the section below on (mixing loot tables)[https://github.com/gibbsly/ltos#mixing-loot-tables]
+There are 2 separate datapacks in this repo, `ltos_dotiledrops` makes blocks exhibit their vanilla block drop behavior, and `ltos_notiledrops` disables all vanilla block drops. If you have custom block loot tables in your datapack be sure to read the section below on [mixing loot tables](https://github.com/gibbsly/ltos#mixing-loot-tables)
 
 
 ### Function Tags
@@ -40,7 +40,9 @@ To order datapacks correctly you will want to run `/datapack disable "file/ltos_
 The functionality of this datapack is reliant on blocks dropping a special item with specific nbt, to apply this behavior to your loot tables add the object shown below.
 ```json
 {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:\"<name of the block here>\"}"}]}]}
-``` An example of a loot table with this inserted would be: ```json
+```
+ An example of a loot table with this inserted would be: 
+```json
 {
   "type": "minecraft:block",
   "pools": [
