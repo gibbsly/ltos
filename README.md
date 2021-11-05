@@ -27,7 +27,7 @@ while those function tags are run, there is context data in storage in `ltos:mai
 
 `destroyer_tool` - the item that the entity that destroyed the block was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
 
-`destroyed_by` - the id of the entity (without the `minecraft:` prefix) that destroyed the block. If the block was destroyed by natural mens or commands the string is `"command"`
+`destroyed_by` - the id of the entity (without the `minecraft:` prefix) that destroyed the block. If the block was destroyed by natural means or commands the string is `"command"`
 
 `block` - the id of the block (without the `minecraft:` prefix) that was destroyed.
 
