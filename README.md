@@ -39,7 +39,21 @@ To order datapacks correctly you will want to run `/datapack disable "file/ltos_
 ### Adding the `pool`
 The functionality of this datapack is reliant on blocks dropping a special item with specific nbt, to apply this behavior to your loot tables add the object shown below.
 ```json
-{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:\"<name of the block here>\"}"}]}]}
+{
+  "rolls":1,
+  "entries":[
+    {
+      "type":"minecraft:loot_table",
+      "name":"ltos:data",
+      "functions":[
+        {
+          "function":"minecraft:set_nbt",
+          "tag":"{block:\"<name of the block here>\"}"
+        }
+      ]
+    }
+  ]
+}
 ```
  An example of a loot table with this inserted would be: 
 ```json
@@ -47,7 +61,7 @@ The functionality of this datapack is reliant on blocks dropping a special item 
   "type": "minecraft:block",
   "pools": [
     {"rolls": 1.0,"bonus_rolls": 0.0,"entries": [{"type": "minecraft:item","name": "minecraft:andesite"}],"conditions": [{"condition": "minecraft:survives_explosion"}]},
-	{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:\"andesite\"}"}]}]}
+    {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:\"andesite\"}"}]}]}
   ]
 }
 ```
