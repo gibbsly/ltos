@@ -49,4 +49,5 @@ The functionality of this datapack is reliant on blocks dropping a special item 
     {"rolls": 1.0,"bonus_rolls": 0.0,"entries": [{"type": "minecraft:item","name": "minecraft:andesite"}],"conditions": [{"condition": "minecraft:survives_explosion"}]},
 	{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:\"andesite\"}"}]}]}
   ]
-}```
+}
+```
