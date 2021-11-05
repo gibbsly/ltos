@@ -1,0 +1,1 @@
+execute as @e[tag=!ltos.registered] at @s run function ltos:register_entity
