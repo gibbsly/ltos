@@ -20,7 +20,7 @@ execute if data storage ltos:main data{killed_by:"snowball"} run scoreboard play
 execute if data storage ltos:main data{killed_by:"tnt"} run scoreboard players set type= ltos.main 4
 execute if data storage ltos:main data{killed_by:"tnt_minecart"} run scoreboard players set type= ltos.main 4
 execute if data storage ltos:main data{killed_by:"wither_skull"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data.killer_owner_uuid run scoreboard players set type= ltos.main 3
+execute if data storage ltos:main data{is_projectile:"true"} run scoreboard players set type= ltos.main 3
 
 #getting uuid
 execute unless score type= ltos.main matches 3 run function ltos:specify_output/entity/uuid
