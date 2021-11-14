@@ -25,7 +25,7 @@ This datapack runs 3 function tags that it runs when an entity is killed, in the
 
 `#ltos:as_killer` - runs as an at the entity that killed the entity. If the killer is a projectile with an owner, this is run as the owner of the projectile.
 
-`#ltos:as_killed` - runs at the center of the block where the entity was killed after the killer function is run.
+`#ltos:as_killed_entity` - runs at the center of the block where the entity was killed after the killer function is run.
 
 
 ### Context and data
