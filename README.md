@@ -14,7 +14,7 @@ This datapack runs 3 function tags that it runs when a block is broken, in the l
 
 `#ltos:as_block` - runs at the center of the block that was broken.
 
-`#ltos:as_destroyer` - runs as an at the entity that destroyed the block. If the entity that destroyed the block is a projectile with an owner, this is run as the owner of the projectile.
+`#ltos:as_destroyer` - runs as and at the entity that destroyed the block. If the entity that destroyed the block is a projectile with an owner, this is run as the owner of the projectile.
 
 `#ltos:as_destroyed_block` - runs at the center of the block that was broken after the destroyer function is run.
 
@@ -23,7 +23,7 @@ This datapack runs 3 function tags that it runs when an entity is killed, in the
 
 `#ltos:as_entity` - runs at the center of the block where the entity was killed.
 
-`#ltos:as_killer` - runs as an at the entity that killed the entity. If the killer is a projectile with an owner, this is run as the owner of the projectile.
+`#ltos:as_killer` - runs as and at the entity that killed the entity. If the killer is a projectile with an owner, this is run as the owner of the projectile.
 
 `#ltos:as_killed_entity` - runs at the center of the block where the entity was killed after the killer function is run.
 
