@@ -1,5 +1,6 @@
 #main scoreboard
 scoreboard objectives add ltos.main dummy
+scoreboard players set $loaded ltos.main 1
 
 #uuid scoreboards
 scoreboard objectives add ltos.uuid.0 dummy

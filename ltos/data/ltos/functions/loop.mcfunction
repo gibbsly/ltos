@@ -1,1 +1,1 @@
-execute as @e[tag=!ltos.registered] at @s run function ltos:register_entity
+execute if score $loaded ltos.main matches 1 as @e[tag=!ltos.registered] at @s run function ltos:register_entity
