@@ -1,1 +1,34 @@
-{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:'player_head'}"}]}]}]}
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{block:'player_head'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:blocks/player_head"
+}note_block_sound"
+                }
+              ],
+              "source": "block_entity"
+            }
+          ],
+          "name": "minecraft:player_head"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/player_head"
+}

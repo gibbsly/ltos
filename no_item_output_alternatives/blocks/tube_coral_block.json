@@ -1,1 +1,45 @@
-{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:'tube_coral_block'}"}]}]}]}
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{block:'tube_coral_block'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:blocks/tube_coral_block"
+}                      }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:tube_coral_block"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "name": "minecraft:dead_tube_coral_block"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/tube_coral_block"
+}

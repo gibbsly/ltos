@@ -1,6 +1,32 @@
 {
-	"type":"minecraft:entity",
-	"pools":[
-		{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:entity_data","functions":[{"function":"minecraft:set_nbt","tag":"{entity:'enderman'}"}]}]}
-	]
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:entity_data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{entity:'enderman'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:entities/enderman"
+}           },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:ender_pearl"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/enderman"
 }

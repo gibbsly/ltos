@@ -1,6 +1,32 @@
 {
-	"type":"minecraft:entity",
-	"pools":[
-		{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:entity_data","functions":[{"function":"minecraft:set_nbt","tag":"{entity:'zombie_horse'}"}]}]}
-	]
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:entity_data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{entity:'zombie_horse'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:entities/zombie_horse"
+}   },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:rotten_flesh"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/zombie_horse"
 }

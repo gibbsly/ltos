@@ -1,6 +1,32 @@
 {
-	"type":"minecraft:entity",
-	"pools":[
-		{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:entity_data","functions":[{"function":"minecraft:set_nbt","tag":"{entity:'glow_squid'}"}]}]}
-	]
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:entity_data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{entity:'glow_squid'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:entities/glow_squid"
+}       },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:glow_ink_sac"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/glow_squid"
 }

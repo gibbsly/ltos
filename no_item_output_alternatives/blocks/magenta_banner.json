@@ -1,1 +1,35 @@
-{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:data","functions":[{"function":"minecraft:set_nbt","tag":"{block:'magenta_banner'}"}]}]}]}
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{block:'magenta_banner'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:blocks/magenta_banner"
+}tterns",
+                  "target": "BlockEntityTag.Patterns"
+                }
+              ],
+              "source": "block_entity"
+            }
+          ],
+          "name": "minecraft:magenta_banner"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/magenta_banner"
+}

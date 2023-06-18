@@ -1,6 +1,41 @@
 {
-	"type":"minecraft:entity",
-	"pools":[
-		{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:entity_data","functions":[{"function":"minecraft:set_nbt","tag":"{entity:'iron_golem'}"}]}]}
-	]
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:entity_data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{entity:'iron_golem'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:entities/iron_golem"
+}      {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/iron_golem"
 }

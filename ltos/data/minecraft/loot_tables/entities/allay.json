@@ -1,1 +1,21 @@
-{"type":"minecraft:entity","pools":[{"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"ltos:entity_data","functions":[{"function":"minecraft:set_nbt","tag":"{entity:'allay'}"}]}]}]}
+{
+    "type": "minecraft:entity",
+    "random_sequence": "minecraft:entities/allay",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ltos:entity_data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{entity:'allay'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
