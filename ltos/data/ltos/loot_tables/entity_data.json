@@ -17,6 +17,7 @@
 						{"function": "minecraft:set_nbt","tag": "{bypasses_invulnerability:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"bypasses_invulnerability": true}}]},
 						{"function": "minecraft:set_nbt","tag": "{bypasses_magic:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"bypasses_magic": true}}]},
 						{"function":"minecraft:copy_nbt","source":"this","ops":[{"source":"Tags","target":"entity_tags","op":"replace"}]},
+						{"function":"minecraft:copy_nbt","source":"this","ops":[{"source":"UUID","target":"entity_uuid","op":"replace"}]},
 						{"function":"minecraft:copy_nbt","source":"killer","ops":[{"source":"UUID","target":"killer_uuid","op":"replace"}]},
 						{"function":"minecraft:copy_nbt","source":"killer","ops":[{"source":"Owner","target":"killer_owner_uuid","op":"replace"}]},
 						{"function":"minecraft:copy_nbt","source":"killer","ops":[{"source":"SelectedItem","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"killer","predicate":{"type":"minecraft:player"}}]},

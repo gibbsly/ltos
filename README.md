@@ -21,11 +21,11 @@ This datapack runs 3 function tags that it runs when a block is broken, in the l
 #### Entities
 This datapack runs 3 function tags that it runs when an entity is killed, in the listed order. There is context and other data stored in storage listed below.
 
-`#ltos:as_entity` - runs at the center of the block where the entity was killed.
+`#ltos:as_entity` - runs as and at the killed entity.
 
 `#ltos:as_killer` - runs as and at the entity that killed the entity. If the killer is a projectile with an owner, this is run as the owner of the projectile.
 
-`#ltos:as_killed_entity` - runs at the center of the block where the entity was killed after the killer function is run.
+`#ltos:as_killed_entity` - runs as and at the killed entity after the killer function is run.
 
 
 ### Context and data
@@ -51,6 +51,10 @@ while those function tags are run, there is context data in storage in `ltos:mai
 `killed_by` - the id of the entity (without the `minecraft:` prefix) that killed the entity. If the entity was killed by natural means or commands the string is `"command"`
 
 `entity` - the id of the entity (without the `minecraft:` prefix) that was killed.
+
+`entity_uuid` - the int array uuid of the entity that was killed.
+
+`entity_tags` - the `Tags` array of the entity that was killed.
 
 
 ## Mixing loot tables

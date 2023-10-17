@@ -1,41 +1,30 @@
 #writing data from item into storage
 data modify storage ltos:main data set from entity @s Item.tag
 
-#determining what tags to run, 1; player, 2; entity, 3; owned, 4; uncheckable
-scoreboard players set type= ltos.main 2
-execute if data storage ltos:main data{killed_by:"player"} run scoreboard players set type= ltos.main 1
-execute if data storage ltos:main data{killed_by:"command"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"creeper"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"dragon_fireball"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"egg"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"end_crystal"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"ender_pearl"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"experience_bottle"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"fireball"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"llama_spit"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"potion"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"shulker_bullet"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"small_fireball"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"snowball"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"tnt"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"tnt_minecart"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{killed_by:"wither_skull"} run scoreboard players set type= ltos.main 4
-execute if data storage ltos:main data{is_projectile:"true"} run scoreboard players set type= ltos.main 3
+#macro data init
+data modify storage ltos:main macro set value {killer_uuid:"-",entity_uuid:"-"}
 
-#getting uuid
-execute unless score type= ltos.main matches 3 run function ltos:specify_output/entity/uuid
-execute if score type= ltos.main matches 3 run function ltos:specify_output/entity/owner
+#getting killed entity uuid
+data modify storage gu:main in set from storage ltos:main data.entity_uuid
+function gu:generate_without_context
+data modify storage ltos:main macro.entity_uuid set from storage gu:main out
+
+#getting killer uuid
+data modify storage ltos:main uuid set value "none"
+execute if data storage ltos:main data.killer_uuid run data modify storage ltos:main uuid set from storage ltos:main data.killer_uuid
+execute if data storage ltos:main data.killer_owner_uuid run data modify storage ltos:main uuid set from storage ltos:main data.killer_owner_uuid
+data modify storage gu:main in set from storage ltos:main uuid
+execute if data storage ltos:main uuid[0] run function gu:generate_without_context
+execute if data storage ltos:main uuid[0] run data modify storage ltos:main macro.killer_uuid set from storage gu:main out
 
 #running tag at entity pre-killer
-execute align xyz positioned ~0.5 ~0.5 ~0.5 run function #ltos:as_entity
+function ltos:specify_output/entity/as_entity_call with storage ltos:main macro
 
 #running tag as killer
-execute if score type= ltos.main matches 1 as @a[distance=..10] if score @s ltos.uuid.0 = uuid.0 ltos.main if score @s ltos.uuid.1 = uuid.1 ltos.main if score @s ltos.uuid.2 = uuid.2 ltos.main if score @s ltos.uuid.3 = uuid.3 ltos.main at @s run function #ltos:as_killer
-execute if score type= ltos.main matches 2 as @e[distance=..10,type=!#ltos:skip] if score @s ltos.uuid.0 = uuid.0 ltos.main if score @s ltos.uuid.1 = uuid.1 ltos.main if score @s ltos.uuid.2 = uuid.2 ltos.main if score @s ltos.uuid.3 = uuid.3 ltos.main at @s run function #ltos:as_killer
-execute if score type= ltos.main matches 3 as @e[type=!#ltos:skip] if score @s ltos.uuid.0 = uuid.0 ltos.main if score @s ltos.uuid.1 = uuid.1 ltos.main if score @s ltos.uuid.2 = uuid.2 ltos.main if score @s ltos.uuid.3 = uuid.3 ltos.main at @s run function #ltos:as_killer
+function ltos:specify_output/entity/as_killer_call with storage ltos:main macro
 
 #running function as entity
-execute align xyz positioned ~0.5 ~0.5 ~0.5 run function #ltos:as_killed_entity
+function ltos:specify_output/entity/as_killed_entity_call with storage ltos:main macro
 
 #terminating item
 kill @s
