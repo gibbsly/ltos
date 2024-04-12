@@ -19,7 +19,7 @@
                                     }
                                 }
                             ],
-                            "name": "minecraft:grass"
+                            "name": "minecraft:short_grass"
                         },
                         {
                             "type": "minecraft:item",
@@ -58,12 +58,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{block:'grass'}"
+                            "tag": "{block:'short_grass'}"
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:blocks/grass"
+    "random_sequence": "minecraft:blocks/short_grass"
 }
