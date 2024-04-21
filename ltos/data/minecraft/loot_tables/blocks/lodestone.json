@@ -21,10 +21,10 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "ltos:data",
+                    "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'lodestone'}"
                         }
                     ]
