@@ -1,5 +1,5 @@
 #writing data from item into storage
-data modify storage ltos:main data set from entity @s Item.tag
+data modify storage ltos:main data set from entity @s Item.components.minecraft:custom_data
 
 #getting uuid
 data modify storage ltos:main uuid set value "none"

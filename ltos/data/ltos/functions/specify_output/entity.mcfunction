@@ -1,5 +1,5 @@
 #writing data from item into storage
-data modify storage ltos:main data set from entity @s Item.tag
+data modify storage ltos:main data set from entity @s Item.components.minecraft:custom_data
 
 #macro data init
 data modify storage ltos:main macro set value {killer_uuid:"-",entity_uuid:"-"}

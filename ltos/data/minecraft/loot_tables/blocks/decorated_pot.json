@@ -39,7 +39,7 @@
                             "type": "minecraft:item",
                             "functions": [
                                 {
-                                    "function": "minecraft:copy_nbt",
+                                    "function": "minecraft:copy_custom_data",
                                     "ops": [
                                         {
                                             "op": "replace",
@@ -62,10 +62,10 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "ltos:data",
+                    "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'decorated_pot'}"
                         }
                     ]
