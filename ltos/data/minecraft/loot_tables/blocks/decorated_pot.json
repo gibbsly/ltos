@@ -11,25 +11,10 @@
                             "type": "minecraft:dynamic",
                             "conditions": [
                                 {
-                                    "condition": "minecraft:match_tool",
-                                    "predicate": {
-                                        "tag": "minecraft:breaks_decorated_pots"
-                                    }
-                                },
-                                {
-                                    "condition": "minecraft:inverted",
-                                    "term": {
-                                        "condition": "minecraft:match_tool",
-                                        "predicate": {
-                                            "enchantments": [
-                                                {
-                                                    "enchantment": "minecraft:silk_touch",
-                                                    "levels": {
-                                                        "min": 1
-                                                    }
-                                                }
-                                            ]
-                                        }
+                                    "block": "minecraft:decorated_pot",
+                                    "condition": "minecraft:block_state_property",
+                                    "properties": {
+                                        "cracked": "true"
                                     }
                                 }
                             ],
@@ -39,13 +24,9 @@
                             "type": "minecraft:item",
                             "functions": [
                                 {
-                                    "function": "minecraft:copy_custom_data",
-                                    "ops": [
-                                        {
-                                            "op": "replace",
-                                            "source": "sherds",
-                                            "target": "BlockEntityTag.sherds"
-                                        }
+                                    "function": "minecraft:copy_components",
+                                    "include": [
+                                        "minecraft:pot_decorations"
                                     ],
                                     "source": "block_entity"
                                 }
