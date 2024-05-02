@@ -1,6 +1,5 @@
-#data modify storage gu:main in set from ????? UUID
-
 data merge storage gu:temp {0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,a:0,b:0,c:0,d:0,e:0,f:0}
+$data modify storage gu:main in set value $(UUID)
 
 execute store result score 0= gu.main store result score 1= gu.main run data get storage gu:main in[0]
 execute store result storage gu:temp 0 int 1 run scoreboard players operation 0= gu.main %= 256 num
@@ -34,5 +33,5 @@ execute store result score 3= gu.main run scoreboard players operation 2= gu.mai
 execute store result storage gu:temp e int 1 run scoreboard players operation 2= gu.main %= 256 num
 execute store result storage gu:temp f int 1 run scoreboard players operation 3= gu.main /= 256 num
 
-function gu:get_hexes with storage gu:temp
-function gu:concat_uuid with storage gu:temp
+function gu:zzz/get_hexes with storage gu:temp
+function gu:zzz/concat_uuid with storage gu:temp

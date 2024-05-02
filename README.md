@@ -10,22 +10,23 @@ In this repo there is the core datapack as well as a folder with alternative loo
 
 ### Function Tags
 #### Blocks
-This datapack runs 3 function tags that it runs when a block is broken, in the listed order. There is context and other data stored in storage listed below.
+This datapack runs a function tag when a block is broken. There are macro arguments that contain some context and additional context and data stored in storage listed below.
 
-`#ltos:as_block` - runs at the center of the block that was broken.
+##### `#ltos:block_broken`  
+runs at the center of the block that was broken. 
 
-`#ltos:as_destroyer` - runs as and at the entity that destroyed the block. If the entity that destroyed the block is a projectile with an owner, this is run as the owner of the projectile.
-
-`#ltos:as_destroyed_block` - runs at the center of the block that was broken after the destroyer function is run.
+Macro arguments
+> `destroyer` - the uuid of the entity that destroyed the block, `"-"` if not present
 
 #### Entities
-This datapack runs 3 function tags that it runs when an entity is killed, in the listed order. There is context and other data stored in storage listed below.
+This datapack runs a function tag when an entity is killed. There are macro arguments that contain some context and additional context and data stored in storage listed below.
 
-`#ltos:as_entity` - runs as and at the killed entity.
+##### `#ltos:entity_killed`
+runs where the entity that was killed was killed.
 
-`#ltos:as_killer` - runs as and at the entity that killed the entity. If the killer is a projectile with an owner, this is run as the owner of the projectile.
-
-`#ltos:as_killed_entity` - runs as and at the killed entity after the killer function is run.
+Macro arguments
+> `killer` - the uuid of the entity that killed the killed entity, `"-"` if not present
+> `killed` - the uuid of the entity that was killed, `"-"` if not present (this shouldn't happen)
 
 
 ### Context and data
@@ -37,8 +38,6 @@ while those function tags are run, there is context data in storage in `ltos:mai
 
 `destroyer_tool` - the item that the entity that destroyed the block was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
 
-`destroyed_by` - the id of the entity (without the `minecraft:` prefix) that destroyed the block. If the block was destroyed by natural means or commands the string is `"command"`
-
 `block` - the id of the block (without the `minecraft:` prefix) that was destroyed.
 
 #### Entities
@@ -47,8 +46,6 @@ while those function tags are run, there is context data in storage in `ltos:mai
 `killer_owner_uuid` - the uuid of the owner of the entity that killed the entity, may not exist.
 
 `killer_weapon` - the item that the entity that killed the entity was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
-
-`killed_by` - the id of the entity (without the `minecraft:` prefix) that killed the entity. If the entity was killed by natural means or commands the string is `"command"`
 
 `entity` - the id of the entity (without the `minecraft:` prefix) that was killed.
 
