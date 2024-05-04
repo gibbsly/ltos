@@ -19,11 +19,11 @@ def patch_blocks(base):
                 "functions": [
                     {
                         "function": "minecraft:set_custom_data",
-                        "tag": "{block:'" + base + "'}",
+                        "tag": "{block:'" + base + "'}"
                     }
-                ],
+                ]
             }
-        ],
+        ]
     }
 
     return structure
@@ -33,16 +33,16 @@ def patch_entities(base):
     structure = {
         "rolls": 1,
         "entries": [
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "ltos:entity_data",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_custom_data",
-                            "tag": "{entity:'" + base + "'}"
-                        }
-                    ]
-                }
+            {
+                "type": "minecraft:loot_table",
+                "value": "ltos:entity_data",
+                "functions": [
+                    {
+                        "function": "minecraft:set_custom_data",
+                        "tag": "{entity:'" + base + "'}"
+                    }
+                ]
+            }
         ]
     }
 
