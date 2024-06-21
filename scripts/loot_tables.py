@@ -6,7 +6,7 @@ script = Path(__file__)
 name, ext = path.splitext(path.basename(script))
 
 ltos_dir = script.parents[1].absolute()
-loot_tables_dir = path.join(ltos_dir, "ltos/data/minecraft/loot_tables")
+loot_tables_dir = path.join(ltos_dir, "ltos/data/minecraft/loot_table")
 
 
 def patch_blocks(base):

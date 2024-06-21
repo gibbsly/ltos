@@ -26,32 +26,33 @@ runs where the entity that was killed was killed.
 
 Macro arguments
 > `killer` - the uuid of the entity that killed the killed entity, `"-"` if not present
+> 
 > `killed` - the uuid of the entity that was killed, `"-"` if not present (this shouldn't happen)
 
 
 ### Context and data
 while those function tags are run, there is context data in storage in `ltos:main data`.
 #### Blocks
-`destroyer_uuid` - the uuid of the entity that destroyed the block, may not exist if the block was destroyed by natural means or commands.
-
-`destroyer_owner_uuid` - the uuid of the owner of the entity that destroyed the block, may not exist.
-
-`destroyer_tool` - the item that the entity that destroyed the block was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
-
-`block` - the id of the block (without the `minecraft:` prefix) that was destroyed.
+> `destroyer_uuid` - the uuid of the entity that destroyed the block, may not exist if the block was destroyed by natural means or commands.
+> 
+> `destroyer_owner_uuid` - the uuid of the owner of the entity that destroyed the block, may not exist.
+> 
+> `destroyer_tool` - the item that the entity that destroyed the block was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
+> 
+> `block` - the id of the block (without the `minecraft:` prefix) that was destroyed.
 
 #### Entities
-`killer_uuid` - the uuid of the entity that killed the entity, may not exist if the entity was killed by natural means or commands.
-
-`killer_owner_uuid` - the uuid of the owner of the entity that killed the entity, may not exist.
-
-`killer_weapon` - the item that the entity that killed the entity was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
-
-`entity` - the id of the entity (without the `minecraft:` prefix) that was killed.
-
-`entity_uuid` - the int array uuid of the entity that was killed.
-
-`entity_tags` - the `Tags` array of the entity that was killed.
+> `killer_uuid` - the uuid of the entity that killed the entity, may not exist if the entity was killed by natural means or commands.
+> 
+> `killer_owner_uuid` - the uuid of the owner of the entity that killed the entity, may not exist.
+> 
+> `killer_weapon` - the item that the entity that killed the entity was holding. This may also be the item data for the item object in a projectile like a snowball or a trident
+> 
+> `entity` - the id of the entity (without the `minecraft:` prefix) that was killed.
+> 
+> `entity_uuid` - the int array uuid of the entity that was killed.
+> 
+> `entity_tags` - the `Tags` array of the entity that was killed.
 
 
 ## Mixing loot tables
