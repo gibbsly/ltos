@@ -18,7 +18,6 @@ execute if data storage ltos:main gu.UUID[0] run data modify storage ltos:main m
 
 #running tag
 function #ltos:entity_killed with storage ltos:main macro
-tellraw @a {"nbt":"macro","storage":"ltos:main"}
 
 #terminating item
 kill @s
