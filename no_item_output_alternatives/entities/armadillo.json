@@ -1,6 +1,5 @@
 {
     "type": "minecraft:entity",
-    "random_sequence": "minecraft:entities/armadillo",
     "pools": [
         {
             "rolls": 1,
@@ -17,5 +16,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:entities/armadillo"
 }

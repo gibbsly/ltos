@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'potted_allium'}"
                         }
                     ]
@@ -18,11 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/potted_allium"
-}necraft:allium"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/potted_allium"
 }

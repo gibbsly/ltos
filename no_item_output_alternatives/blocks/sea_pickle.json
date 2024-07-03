@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'sea_pickle'}"
                         }
                     ]
@@ -18,45 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/sea_pickle"
-} "minecraft:set_count"
-            },
-            {
-              "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:sea_pickle",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "pickles": "3"
-                  }
-                }
-              ],
-              "count": 3.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "add": false,
-              "conditions": [
-                {
-                  "block": "minecraft:sea_pickle",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "pickles": "4"
-                  }
-                }
-              ],
-              "count": 4.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:explosion_decay"
-            }
-          ],
-          "name": "minecraft:sea_pickle"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/sea_pickle"
 }

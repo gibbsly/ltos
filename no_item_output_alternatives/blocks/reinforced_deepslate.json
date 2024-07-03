@@ -1,6 +1,5 @@
 {
     "type": "minecraft:block",
-    "random_sequence": "minecraft:blocks/reinforced_deepslate",
     "pools": [
         {
             "rolls": 1,
@@ -10,12 +9,13 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'reinforced_deepslate'}"
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:blocks/reinforced_deepslate"
 }

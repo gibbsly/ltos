@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'white_stained_glass'}"
                         }
                     ]
@@ -18,8 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/white_stained_glass"
-}
-    }
-  ],
-  "random_sequence": "minecraft:blocks/white_stained_glass"
 }

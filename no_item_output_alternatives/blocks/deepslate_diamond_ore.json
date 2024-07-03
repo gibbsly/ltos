@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'deepslate_diamond_ore'}"
                         }
                     ]
@@ -18,33 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/deepslate_diamond_ore"
-}            }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "name": "minecraft:deepslate_diamond_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:diamond"
-            }
-          ]
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/deepslate_diamond_ore"
 }

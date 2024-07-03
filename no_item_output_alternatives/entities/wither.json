@@ -1,6 +1,5 @@
 {
     "type": "minecraft:entity",
-    "random_sequence": "minecraft:entities/wither",
     "pools": [
         {
             "rolls": 1,
@@ -10,12 +9,13 @@
                     "value": "ltos:entity_data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{entity:'wither'}"
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:entities/wither"
 }

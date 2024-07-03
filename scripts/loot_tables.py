@@ -1,6 +1,6 @@
 import json
-from pathlib import Path
 from os import path
+from pathlib import Path
 
 script = Path(__file__)
 name, ext = path.splitext(path.basename(script))
@@ -71,8 +71,8 @@ for loot_table in Path(path.join(loot_tables_dir, "blocks")).glob("*.json"):
 
         loaded_loot_table.seek(0)
 
-        json_structure = json.dumps(current_loot_table, indent=4)
-        loaded_loot_table.write(json_structure)
+        json.dump(current_loot_table, loaded_loot_table, indent=4)
+        loaded_loot_table.truncate()
 
 
 for loot_table in Path(path.join(loot_tables_dir, "entities")).glob("*.json"):
@@ -97,5 +97,5 @@ for loot_table in Path(path.join(loot_tables_dir, "entities")).glob("*.json"):
 
         loaded_loot_table.seek(0)
 
-        json_structure = json.dumps(current_loot_table, indent=4)
-        loaded_loot_table.write(json_structure)
+        json.dump(current_loot_table, loaded_loot_table, indent=4)
+        loaded_loot_table.truncate()

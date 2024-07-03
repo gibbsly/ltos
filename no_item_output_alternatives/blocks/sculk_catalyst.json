@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'sculk_catalyst'}"
                         }
                     ]
@@ -18,8 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/sculk_catalyst"
-}: 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/sculk_catalyst"
 }

@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'player_head'}"
                         }
                     ]
@@ -18,17 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/player_head"
-}note_block_sound"
-                }
-              ],
-              "source": "block_entity"
-            }
-          ],
-          "name": "minecraft:player_head"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/player_head"
 }

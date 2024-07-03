@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'potted_oak_sapling'}"
                         }
                     ]
@@ -18,11 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/potted_oak_sapling"
-}k_sapling"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/potted_oak_sapling"
 }
