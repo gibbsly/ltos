@@ -9,7 +9,7 @@
                     "value": "ltos:entity_data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{entity:'skeleton_horse'}"
                         }
                     ]
@@ -18,15 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:entities/skeleton_horse"
-},
-              "function": "minecraft:looting_enchant"
-            }
-          ],
-          "name": "minecraft:bone"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:entities/skeleton_horse"
 }

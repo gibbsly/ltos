@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'diamond_ore'}"
                         }
                     ]
@@ -18,34 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/diamond_ore"
-}min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "name": "minecraft:diamond_ore"
-            },
-            {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:diamond"
-            }
-          ]
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/diamond_ore"
 }

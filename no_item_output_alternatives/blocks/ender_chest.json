@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'ender_chest'}"
                         }
                     ]
@@ -18,34 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/ender_chest"
-}min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "name": "minecraft:ender_chest"
-            },
-            {
-              "type": "minecraft:item",
-              "functions": [
-                {
-                  "add": false,
-                  "count": 8.0,
-                  "function": "minecraft:set_count"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "minecraft:obsidian"
-            }
-          ]
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/ender_chest"
 }

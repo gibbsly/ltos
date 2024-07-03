@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'horn_coral'}"
                         }
                     ]
@@ -18,8 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/horn_coral"
-}lls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/horn_coral"
 }

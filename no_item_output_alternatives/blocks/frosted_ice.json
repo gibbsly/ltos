@@ -1,6 +1,5 @@
 {
     "type": "minecraft:block",
-    "random_sequence": "minecraft:blocks/frosted_ice",
     "pools": [
         {
             "rolls": 1,
@@ -10,12 +9,13 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'frosted_ice'}"
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:blocks/frosted_ice"
 }

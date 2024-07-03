@@ -1,6 +1,5 @@
 {
     "type": "minecraft:block",
-    "random_sequence": "minecraft:blocks/suspicious_gravel",
     "pools": [
         {
             "rolls": 1,
@@ -10,12 +9,13 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'suspicious_gravel'}"
                         }
                     ]
                 }
             ]
         }
-    ]
+    ],
+    "random_sequence": "minecraft:blocks/suspicious_gravel"
 }

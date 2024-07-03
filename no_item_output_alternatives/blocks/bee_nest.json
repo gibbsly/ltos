@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'bee_nest'}"
                         }
                     ]
@@ -18,29 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/bee_nest"
-}"minecraft:copy_nbt",
-              "ops": [
-                {
-                  "op": "replace",
-                  "source": "Bees",
-                  "target": "BlockEntityTag.Bees"
-                }
-              ],
-              "source": "block_entity"
-            },
-            {
-              "block": "minecraft:bee_nest",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "honey_level"
-              ]
-            }
-          ],
-          "name": "minecraft:bee_nest"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/bee_nest"
 }

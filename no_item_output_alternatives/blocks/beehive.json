@@ -9,7 +9,7 @@
                     "value": "ltos:data",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "minecraft:set_custom_data",
                             "tag": "{block:'beehive'}"
                         }
                     ]
@@ -18,44 +18,4 @@
         }
     ],
     "random_sequence": "minecraft:blocks/beehive"
-}       "min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "functions": [
-                {
-                  "function": "minecraft:copy_nbt",
-                  "ops": [
-                    {
-                      "op": "replace",
-                      "source": "Bees",
-                      "target": "BlockEntityTag.Bees"
-                    }
-                  ],
-                  "source": "block_entity"
-                },
-                {
-                  "block": "minecraft:beehive",
-                  "function": "minecraft:copy_state",
-                  "properties": [
-                    "honey_level"
-                  ]
-                }
-              ],
-              "name": "minecraft:beehive"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:beehive"
-            }
-          ]
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "minecraft:blocks/beehive"
 }
