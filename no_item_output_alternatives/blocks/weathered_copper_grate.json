@@ -10,12 +10,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{block:'grass'}"
+                            "tag": "{block:'weathered_copper_grate'}"
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:blocks/grass"
+    "random_sequence": "minecraft:blocks/weathered_copper_grate"
 }
