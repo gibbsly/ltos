@@ -11,20 +11,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "functions": [
-                        {
-                            "function": "minecraft:copy_components",
-                            "include": [
-                                "minecraft:custom_name",
-                                "minecraft:item_name",
-                                "minecraft:tooltip_display",
-                                "minecraft:banner_patterns",
-                                "minecraft:rarity"
-                            ],
-                            "source": "block_entity"
-                        }
-                    ],
-                    "name": "minecraft:blue_banner"
+                    "name": "minecraft:cactus_flower"
                 }
             ],
             "rolls": 1.0
@@ -38,12 +25,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{block:'blue_banner'}"
+                            "tag": "{block:'cactus_flower'}"
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:blocks/blue_banner"
+    "random_sequence": "minecraft:blocks/cactus_flower"
 }
