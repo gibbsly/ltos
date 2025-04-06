@@ -49,7 +49,7 @@
 						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"Trident","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:trident"}}]},
 						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"HandItems[0]","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:player"}}}]},
 						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"Item","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:player"}}}]},
-                        {"function":"minecraft:set_components","components":{"minecraft:item_model": "minecraft:air"}}
+                        {"function":"minecraft:set_components","components":{"!minecraft:item_model": {}}}
 					]
 				}
 			]
