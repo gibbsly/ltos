@@ -10,12 +10,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{block:'chain'}"
+                            "tag": "{block:'weathered_copper_golem_statue'}"
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:blocks/chain"
+    "random_sequence": "minecraft:blocks/weathered_copper_golem_statue"
 }

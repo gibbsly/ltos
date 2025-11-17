@@ -11,7 +11,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:chain"
+                    "name": "minecraft:waxed_exposed_lightning_rod"
                 }
             ],
             "rolls": 1.0
@@ -25,12 +25,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{block:'chain'}"
+                            "tag": "{block:'waxed_exposed_lightning_rod'}"
                         }
                     ]
                 }
             ]
         }
     ],
-    "random_sequence": "minecraft:blocks/chain"
+    "random_sequence": "minecraft:blocks/waxed_exposed_lightning_rod"
 }
